@@ -3,16 +3,15 @@ import pandas as pd
 import streamlit as st
 
 # Show the page title and description.
-st.set_page_config(page_title="Movies dataset", page_icon="🎬")
-st.title("🎬 Movies dataset")
+st.set_page_config(page_title="Requirements and Traceability", page_icon="📋")
+st.title("📋 APP's Requirements and Traceability")
 st.write(
     """
-    This app visualizes data from [The Movie Database (TMDB)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata).
-    It shows which movie genre performed best at the box office over the years. Just 
-    click on the widgets below to explore!
+    This app visualizes requirements and their traceability from Infineon's public user manuals of TC3xx [Part1](https://www.infineon.com/dgdl/?fileId=5546d462712ef9b701717d3605221d96) and [Part2](https://www.infineon.com/dgdl/?fileId=5546d462712ef9b701717d35f8541d94).
+    It shows all configurable registers based on the filters specified in the Filter box.
+    Just click on the widgets below to explore!
     """
 )
-
 
 # Load the data from a CSV. We're caching this so it doesn't reload every time the app
 # reruns (e.g. if the user interacts with the widgets).
